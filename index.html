@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Delicious Restaurant Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-fire.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+</head>
+<body>
+
+  
+  <div id="header" style="text-align: center;">
+    <h1>Delicious Restaurant</h1>
+    <p>Table No: 5</p>
+  </div>
+
+  <div class="menu" style="display: flex; flex-direction: row; margin-left: 20px; margin-right: 20px;">
+    <div class="menu-item">
+      <img src="https://source.unsplash.com/200x150/?pizza" alt="Pizza" style="border-radius: 10px; margin-right: 20px;">
+      <h3>Pizza</h3>
+      <span>$10.99</span>
+      <button onclick="addToCart('Pizza')">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="https://source.unsplash.com/200x150/?burger" alt="Burger" style="border-radius: 10px; margin-right: 20px;">
+      <h3>Burger</h3>
+      <span>$8.99</span>
+      <button onclick="addToCart('Burger')">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="https://source.unsplash.com/200x150/?salad" alt="Salad" style="border-radius: 10px; margin-right: 20px;">
+      <h3>Salad</h3>
+      <span>$5.99</span>
+      <button onclick="addToCart('Salad')">Add to Cart</button>
+    </div>
+  </div>
+
+  <div id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items">
+    </ul>
+    <div id="total"></div> <!-- Display the total here -->
+  </div>
+
+  <button id="checkout-button">Checkout</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
