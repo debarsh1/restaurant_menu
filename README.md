@@ -1,4 +1,4 @@
-# restaurant_menu
+# simple_restaurant_menu
 Title: Restaurant Menu with Cart and Checkout
 
 Description:
